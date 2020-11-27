@@ -1,0 +1,58 @@
+/* Ces styles seront tous purgés */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* ajout de nouveaux utilitaires : https://tailwindcss.com/docs/adding-new-utilities */
+  h1 {
+    @apply sc-text-4xl sc-font-sans sc-font-semibold sc-tracking-wider sc-uppercase;
+  }
+  h2 {
+    @apply sc-text-2xl sc-font-sans sc-font-semibold sc-tracking-wider sc-capitalize;
+  }
+  h3 {
+    @apply sc-text-xl sc-font-sans sc-font-medium sc-tracking-wider sc-capitalize;
+  }
+  h4 {
+    @apply sc-text-lg sc-font-serif sc-font-medium sc-tracking-wide sc-capitalize;
+  }
+  h5 {
+    @apply sc-text-base sc-font-serif sc-font-medium sc-tracking-normal	sc-capitalize;
+  }
+  h6 {
+    @apply sc-text-sm sc-font-serif sc-font-semibold sc-tracking-normal	sc-capitalize;
+  }
+  a {
+    @apply sc-no-underline sc-text-lg sc-font-sans  sc-text-blue-4 sc-tracking-wide sc-font-medium hover:sc-text-blue-4;
+  }
+  p a{
+    box-shadow: inset 0 -0.125em 0 0 #fff, inset 0 -0.375em 0 0 #2A93D530;
+  }
+  p {
+    @apply sc-text-lg sc-font-serif sc-font-medium sc-tracking-wide;
+  }
+  button {
+    @apply sc-px-10 sc-py-4 sc-capitalize sc-tracking-widest sc-rounded-lg sc-font-semibold sc-border-2;
+  }
+  button.sc-btn-remplit {
+    @apply sc-shadow-xl sc-bg-blue-2 sc-text-gray-10 sc-border-blue-2;
+  }
+  button.sc-btn-vide {
+    @apply sc-text-blue-2;
+  }
+  /* div,
+  section,
+  nav {
+    @apply sc-px-5 sc-py-2 sc-space-y-2;
+  }
+  /* form */ /*
+  input:not([type="radio"]):not([type="checkbox"]) {
+    @apply sc-px-5 sc-py-3 sc-text-gray-5 sc-border-gray-8 sc-rounded-lg sc-border sc-w-full sc-block sc-shadow-sm sc-bg-gray-10;
+    @apply focus:sc-text-gray-4 focus:sc-outline-none focus:sc-bg-blue-op3-9 focus:sc-shadow;
+  }
+  select {
+    @apply sc-px-5 sc-py-3 sc-text-gray-5 sc-border-gray-8 sc-rounded-lg sc-border sc-w-full sc-block sc-shadow-sm sc-bg-gray-10;
+    @apply focus:sc-text-gray-4 focus:sc-outline-none focus:sc-bg-blue-op3-9 focus:sc-shadow;
+  } */
+}
