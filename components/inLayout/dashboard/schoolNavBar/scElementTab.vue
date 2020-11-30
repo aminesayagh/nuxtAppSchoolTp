@@ -1,6 +1,6 @@
 <template>
   <div>
-    <scElementMenu :menuContenus="menuContenusToExport"></scElementMenu>
+    <scElementMenu :menuContenus="$store.state.scElementMenu"></scElementMenu>
   </div>
 </template>
 
@@ -12,6 +12,7 @@ export default {
   },
   data() {
     return {
+
       menuContenusToExport: [
         {
           img:

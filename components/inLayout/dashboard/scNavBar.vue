@@ -1,10 +1,17 @@
 <template>
-    <section class="">
-        <div  class="sc-w-1/16 sc-px-4 sc-h-full sc-py-8 sc-fixed">
-        <schoolLogo class="sc-p-1 sc-w-12 sc-text-center"/>
-        <schoolElementTab class="sc-my-20"/>
-        <div></div></div>
+    <section class="sc-px-6 sc-h-full">    
+        <v-container>
+            <v-row>
+                <v-img>
+                    <schoolLogo class="sc-p-2"/>
+                </v-img>
+            </v-row>
+            <v-row>
+                <schoolElementTab class=""/>
+            </v-row>
+        </v-container>
     </section>
+    
 </template>
 
 
